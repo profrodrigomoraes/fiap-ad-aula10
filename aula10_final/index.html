@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Séries</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Catálogo de Séries</h1>
+  <p class="subtitulo">API TVmaze</p>
+
+  <!-- AULA 10 — a busca agora é um formulário: o envio chama a API (endpoint /search/shows) -->
+  <form class="controles" onsubmit="buscarSeries(event)" novalidate>
+    <input type="text" class="busca" placeholder="Buscar por título...">
+    <button type="submit" class="btn-buscar">Buscar</button>
+  </form>
+
+  <p class="contador"></p>
+
+  <div class="grid-series"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
